@@ -144,3 +144,4 @@ curl -X POST http://localhost:8000/api/v1/logs/ingest \
 ## 🛡️ License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
