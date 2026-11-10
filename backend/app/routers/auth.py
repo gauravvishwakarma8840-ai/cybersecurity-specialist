@@ -11,6 +11,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 import redis.asyncio as aioredis
 
+from app.core.config import settings
 from app.core.database import get_db
 from app.core.dependencies import get_redis, get_current_token_payload, rate_limit
 from app.schemas.auth import AuthResponse, PasswordChange, RefreshTokenRequest, TokenResponse, UserLogin, UserRegister
@@ -20,8 +21,8 @@ logger = logging.getLogger(__name__)
 router = APIRouter()
 
 REFRESH_COOKIE_NAME = "refresh_token"
-COOKIE_SECURE = True   # Set False in local dev if not using HTTPS
-COOKIE_SAMESITE = "strict"
+COOKIE_SECURE = False if settings.APP_ENV == "development" else True
+COOKIE_SAMESITE = "lax" if settings.APP_ENV == "development" else "strict"
 
 
 def _set_refresh_cookie(response: Response, refresh_token: str) -> None:

@@ -10,6 +10,7 @@ from fastapi import FastAPI, Request, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import JSONResponse
+from fastapi.encoders import jsonable_encoder
 from fastapi.exceptions import RequestValidationError
 
 from app.core.config import settings
@@ -111,7 +112,7 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
         status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
         content={
             "error": "Validation Error",
-            "detail": exc.errors(),
+            "detail": jsonable_encoder(exc.errors()),
             "message": "One or more fields failed validation.",
         },
     )
