@@ -15,24 +15,24 @@ const NAV_ITEMS = [
   {
     group: 'Security',
     items: [
-      { href: '/dashboard/alerts',     label: 'Alerts',             icon: <AlertIcon />,    badge: 'live' },
-      { href: '/dashboard/logs',       label: 'Log Analysis',       icon: <LogIcon /> },
-      { href: '/dashboard/threats',    label: 'Threat Intel',       icon: <ThreatIcon /> },
-      { href: '/dashboard/vulnerabilities', label: 'Vulnerabilities', icon: <VulnIcon /> },
+      { href: '/alerts',               label: 'Alerts',             icon: <AlertIcon />,    badge: 'live' },
+      { href: '/logs',                 label: 'Log Analysis',       icon: <LogIcon /> },
+      { href: '/threats',              label: 'Threat Intel',       icon: <ThreatIcon /> },
+      { href: '/vulnerabilities',      label: 'Vulnerabilities',    icon: <VulnIcon /> },
     ],
   },
   {
     group: 'Assets & AI',
     items: [
-      { href: '/dashboard/assets',     label: 'Assets',             icon: <AssetsIcon /> },
-      { href: '/dashboard/ai-analyst', label: 'AI Analyst',         icon: <AIIcon />,       badge: 'new' },
-      { href: '/dashboard/reports',    label: 'Reports',            icon: <ReportIcon /> },
+      { href: '/assets',               label: 'Assets',             icon: <AssetsIcon /> },
+      { href: '/ai-analyst',           label: 'AI Analyst',         icon: <AIIcon />,       badge: 'new' },
+      { href: '/reports',              label: 'Reports',            icon: <ReportIcon /> },
     ],
   },
   {
     group: 'Account',
     items: [
-      { href: '/dashboard/settings',   label: 'Settings',           icon: <SettingsIcon /> },
+      { href: '/settings',             label: 'Settings',           icon: <SettingsIcon /> },
     ],
   },
 ];

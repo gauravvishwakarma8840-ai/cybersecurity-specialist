@@ -195,12 +195,12 @@ export default function DashboardPage() {
         <h3 className={styles.sectionTitle}>Quick Actions</h3>
         <div className={styles.actionsGrid}>
           {[
-            { href: '/dashboard/alerts', label: 'Create Alert', icon: '🚨', color: '#FF3B3B' },
-            { href: '/dashboard/logs', label: 'Ingest Logs', icon: '📋', color: '#00D4FF' },
-            { href: '/dashboard/threats', label: 'Add IOC', icon: '🕵️', color: '#FFA500' },
-            { href: '/dashboard/ai-analyst', label: 'Ask AI Analyst', icon: '🤖', color: '#A855F7' },
-            { href: '/dashboard/reports', label: 'Generate Report', icon: '📊', color: '#00C896' },
-            { href: '/dashboard/assets', label: 'Add Asset', icon: '🖥️', color: '#6B8DB2' },
+            { href: '/alerts', label: 'Create Alert', icon: '🚨', color: '#FF3B3B' },
+            { href: '/logs', label: 'Ingest Logs', icon: '📋', color: '#00D4FF' },
+            { href: '/threats', label: 'Add IOC', icon: '🕵️', color: '#FFA500' },
+            { href: '/ai-analyst', label: 'Ask AI Analyst', icon: '🤖', color: '#A855F7' },
+            { href: '/reports', label: 'Generate Report', icon: '📊', color: '#00C896' },
+            { href: '/assets', label: 'Add Asset', icon: '🖥️', color: '#6B8DB2' },
           ].map(action => (
             <a key={action.href} href={action.href} className={styles.actionCard}>
               <span className={styles.actionIcon} style={{ background: `${action.color}1A`, border: `1px solid ${action.color}33` }}>

@@ -8,13 +8,21 @@ import styles from './Header.module.css';
 
 const PAGE_TITLES: Record<string, { title: string; subtitle: string }> = {
   '/dashboard':                    { title: 'Security Dashboard',  subtitle: 'Real-time threat overview' },
+  '/alerts':                       { title: 'Alert Management',    subtitle: 'Monitor and respond to security alerts' },
   '/dashboard/alerts':             { title: 'Alert Management',    subtitle: 'Monitor and respond to security alerts' },
+  '/logs':                         { title: 'Log Analysis',        subtitle: 'Ingest and analyze security logs' },
   '/dashboard/logs':               { title: 'Log Analysis',        subtitle: 'Ingest and analyze security logs' },
+  '/threats':                      { title: 'Threat Intelligence', subtitle: 'IOC tracking and enrichment' },
   '/dashboard/threats':            { title: 'Threat Intelligence', subtitle: 'IOC tracking and enrichment' },
+  '/vulnerabilities':              { title: 'Vulnerabilities',     subtitle: 'CVE tracking and risk management' },
   '/dashboard/vulnerabilities':    { title: 'Vulnerabilities',     subtitle: 'CVE tracking and risk management' },
+  '/assets':                       { title: 'Asset Inventory',     subtitle: 'IT asset management and exposure tracking' },
   '/dashboard/assets':             { title: 'Asset Inventory',     subtitle: 'IT asset management and exposure tracking' },
+  '/ai-analyst':                   { title: 'AI Security Analyst', subtitle: 'Gemini-powered threat analysis chatbot' },
   '/dashboard/ai-analyst':         { title: 'AI Security Analyst', subtitle: 'Gemini-powered threat analysis chatbot' },
+  '/reports':                      { title: 'Security Reports',    subtitle: 'On-demand and scheduled reports' },
   '/dashboard/reports':            { title: 'Security Reports',    subtitle: 'On-demand and scheduled reports' },
+  '/settings':                     { title: 'Settings',            subtitle: 'Organization and account management' },
   '/dashboard/settings':           { title: 'Settings',            subtitle: 'Organization and account management' },
 };
 

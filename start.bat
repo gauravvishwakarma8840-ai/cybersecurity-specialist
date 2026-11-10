@@ -32,3 +32,4 @@ echo.
 start http://localhost:3000
 echo Opening browser... You can keep this window open or close it.
 pause
+
