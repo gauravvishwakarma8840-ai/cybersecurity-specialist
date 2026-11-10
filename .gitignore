@@ -1,0 +1,73 @@
+# =============================================================================
+# CyberSentinel AI — Git Ignore Configuration
+# =============================================================================
+
+# --- Environment & Sensitive Secrets (NEVER COMMIT) ---
+.env
+.env.local
+.env.*.local
+*.env
+backend/.env
+frontend/.env.local
+certs/
+backend/certs/
+*.pem
+*.key
+*.cert
+*.crt
+
+# --- Python Virtual Environments ---
+venv/
+venv*/
+.venv/
+env/
+backend/venv/
+backend/venv312/
+
+# --- Python Bytecode & Cache ---
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Node / Frontend Build & Dependencies ---
+node_modules/
+frontend/node_modules/
+.next/
+frontend/.next/
+out/
+frontend/out/
+build/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Local Databases ---
+*.db
+*.sqlite
+*.sqlite3
+backend/cybersentinel.db
+
+# --- Logs & Temp Files ---
+*.log
+logs/
+tmp/
+temp/
+
+# --- Operating System & Editor Files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
